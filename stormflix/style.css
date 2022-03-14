@@ -1,0 +1,146 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://laptopstalk.com/wp-content/uploads/2020/04/apps.55787.9007199266246365.687a10a8-4c4a-4a47-8ec5-a95f70d8852d.jpg");
+  background-color: #000000;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 80px;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: red;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+}
+
+.filmes {
+  max-height: 250px;
+  min-height: 250px;
+  max-width: 180px;
+  min-width: 180px;
+  filter: none;
+  transition: transform 400ms;
+  box-shadow: 3px 3px 20px black;
+  cursor: pointer;
+  margin-top: 0px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+.filmes:hover {
+  filter: none;
+  border-style: solid;
+  border-color: white;
+  transform: scale(1.2);
+  z-index: 1;
+  margin-right: 10.5px;
+  margin-left: 10.5px;
+  margin-top: 0px;
+  margin-bottom: 21px;
+}
+
+.blur {
+  filter: blur(3px);
+  box-shadow: 3px 3px 20px black;
+  transition: 0.6s ease;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  max-height: 250px;
+  min-height: 250px;
+  max-width: 180px;
+  min-width: 180px;
+}
+
+#boxInput {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 200px;
+  height: auto;
+  margin: 20px auto;
+  box-shadow: 3px 3px 20px black;
+  padding: 15px;
+  margin-bottom: 45px;
+}
+
+input {
+  margin-top: 10px;
+  color: white;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.3s ease;
+}
+
+::placeholder {
+}
+
+input:focus {
+  border-color: white;
+}
+
+button {
+  border: none;
+  height: 40px;
+  width: 90px;
+  font-weight: bold;
+  background-color: #d62214;
+  font-size: 12px;
+  color: #fefaf4;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #7f150e;
+  color: #dedbd7;
+}
+
+#imagens {
+  padding: 0px 150px;
+}
+
+p {
+  color: red;
+  font-size: 10px;
+}
+
+#nome {
+  margin-bottom: 20px;
+}
