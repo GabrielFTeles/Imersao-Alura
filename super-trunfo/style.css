@@ -1,0 +1,136 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 854px;
+  background-image: url("https://cutewallpaper.org/21/star-background-gif/Animated-Star-Background-Stock-by-FirstDarkAngel2001-on-.gif");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-bottom: 20vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.page-logo {
+  max-width: 130px;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#btnJogar {
+  display: none;
+}
+
+#btnSortear {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+#btnSortear:hover {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+h2 {
+  color: white;
+  display: none;
+}
+
+#carta-jogador {
+  width: 360px;
+  height: 500px;
+  overflow: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+#carta-jogador h3 {
+  text-align: center;
+}
+
+.carta-imagem {
+  border: 1px solid black;
+  height: 100px;
+  margin: 10px;
+}
+
+.carta-imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.carta-status {
+  height: 160px;
+  margin: 1.5rem;
+}
+
+.carta-status input {
+  margin: 20px 10px;
+}
+
+.opcoes {
+  color: white;
+}
+
+#resultado {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.cartaJogadorImg {
+  height: 300px;
+  width: 250px;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.cartaMaquinaImg {
+  height: 300px;
+  width: 250px;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+#imagens {
+  display: flex;
+  margin-top: 100px;
+}
+
+#cartaJogador {
+  margin: auto;
+}
+
+#cartaMaquina {
+  margin: auto;
+}
