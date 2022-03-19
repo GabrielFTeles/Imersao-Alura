@@ -3,10 +3,7 @@ function Real() {
   var valor = valorElemento.value;
   var valorEmDolars = parseFloat(valor);
 
-  if (isNaN(valorEmDolars)) {
-    document.getElementById("valorConvertido").innerHTML =
-      "O valor inserido é inválido!";
-  } else {
+  if (verificarIsNaN(valorEmDolars) == false) {
     var valorConvertido1 = valorEmDolars * 5.06;
     var valorConvertido2 = valorEmDolars * 0.000026;
 
@@ -21,10 +18,7 @@ function Euro() {
   var valor = valorElemento.value;
   var valorEmDolars = parseFloat(valor);
 
-  if (isNaN(valorEmDolars)) {
-    document.getElementById("valorConvertido").innerHTML =
-      "O valor inserido é inválido!";
-  } else {
+  if (verificarIsNaN(valorEmDolars) == false) {
     var valorConvertido1 = valorEmDolars * 0.92;
 
     var valorConvertido1fix = valorConvertido1.toFixed(2);
@@ -38,13 +32,20 @@ function Bit() {
   var valor = valorElemento.value;
   var valorEmDolars = parseFloat(valor);
 
-  if (isNaN(valorEmDolars)) {
-    document.getElementById("valorConvertido").innerHTML =
-      "O valor inserido é inválido!";
-  } else {
+  if (verificarIsNaN(valorEmDolars) == false) {
     var valorConvertido1 = valorEmDolars * 0.000026;
 
     document.getElementById("valorConvertido").innerHTML =
       "BTC: ₿ " + valorConvertido1;
+  }
+}
+
+function verificarIsNaN(valorEmDolars) {
+  if (isNaN(valorEmDolars)) {
+    document.getElementById("valorConvertido").innerHTML =
+      "O valor inserido é inválido!";
+    return true;
+  } else {
+    return false;
   }
 }
